@@ -1,0 +1,94 @@
+:root{
+/* ---- Brand base (from the logo) ---- */
+--cbgm-navy-900:#0E1D33;
+--cbgm-navy-800:#14284A;
+--cbgm-navy-700:#1A335C;
+--cbgm-navy-600:#1F3E6E;   /* logo wordmark navy */
+--cbgm-navy-500:#2A5088;
+--cbgm-navy-400:#4A6E9E;
+--cbgm-navy-300:#8AA2BF;
+--cbgm-navy-200:#C3D0DF;
+--cbgm-navy-100:#E6ECF3;
+
+--cbgm-green-700:#1F7A38;
+--cbgm-green-600:#2A9440;
+--cbgm-green-500:#38B34B;  /* logo mark green */
+--cbgm-green-400:#5FC46E;
+--cbgm-green-300:#93D89D;
+--cbgm-green-100:#E4F5E7;
+
+--cbgm-teal-600:#245667;   /* logo gradient midpoint */
+--cbgm-teal-500:#276363;
+
+/* ---- Slate: the deck's working palette (exact, from the .pptx) ---- */
+--cbgm-slate-900:#272525;
+--cbgm-slate-800:#3D3E44;  /* all deck body and heading text */
+--cbgm-slate-600:#74767D;  /* eyebrows, muted copy, big-figure grey */
+--cbgm-slate-300:#C5C7D2;  /* rules, dividers */
+--cbgm-slate-250:#C6C9DC;
+--cbgm-slate-200:#D3D5E4;
+--cbgm-slate-150:#DFE1EC;  /* card and band fills */
+--cbgm-slate-100:#E8E9F0;
+--cbgm-slate-50:#EFF0F6;   /* lightest surface tint */
+--cbgm-white:#FFFFFF;
+
+/* ---- Cool neutrals (interface greys, marketing chrome) ---- */
+--cbgm-grey-50:#F7F9FB;
+--cbgm-grey-100:#EEF2F6;
+--cbgm-grey-200:#DDE4EC;
+--cbgm-grey-300:#C2CCD8;
+--cbgm-grey-400:#93A1B2;
+--cbgm-grey-500:#6B7887;
+--cbgm-grey-600:#4C5765;
+--cbgm-grey-700:#333C48;
+--cbgm-grey-900:#161B21;
+
+/* ---- Brand gradient (logo mark: green bottom-left to navy top-right) ---- */
+--cbgm-gradient-mark:linear-gradient(45deg,#38B34B 0%,#276363 48%,#1F3E6E 100%); /* @kind color */
+--cbgm-gradient-navy:linear-gradient(160deg,#1F3E6E 0%,#0E1D33 100%); /* @kind color */
+--cbgm-gradient-rule:linear-gradient(90deg,#38B34B 0%,#1F3E6E 100%); /* @kind color */
+
+/* ---- Semantic: light surfaces (deck and marketing) ---- */
+--surface-page:var(--cbgm-white);
+--surface-subtle:var(--cbgm-slate-50);
+--surface-band:var(--cbgm-slate-150);
+--surface-card:var(--cbgm-white);
+--surface-inverse:var(--cbgm-navy-800);
+--surface-accent:var(--cbgm-green-100);
+--border-subtle:var(--cbgm-slate-150);
+--border-strong:var(--cbgm-slate-300);
+--border-brand:var(--cbgm-navy-600);
+--text-heading:var(--cbgm-slate-800);
+--text-body:var(--cbgm-slate-800);
+--text-muted:var(--cbgm-slate-600);
+--text-inverse:var(--cbgm-white);
+--text-inverse-muted:var(--cbgm-navy-200);
+--text-brand:var(--cbgm-navy-600);
+--text-accent:var(--cbgm-green-700);
+--text-link:var(--cbgm-navy-600);
+--text-link-hover:var(--cbgm-green-600);
+
+/* ---- Semantic: market data. Sampled from a full-resolution platform capture. ---- */
+--data-buy:#7ACC79;
+--data-buy-strong:#6BB26B;
+--data-buy-bg:rgba(122,204,121,.14);
+--data-sell:#F14376;
+--data-sell-strong:#AD365A;
+--data-sell-bg:rgba(241,67,118,.14);
+--data-roll:#11C9FC;
+--data-roll-strong:#12AFDB;
+--data-roll-bg:rgba(17,201,252,.12);
+--data-missing:#D9944A;
+--data-locked:#F13D4F;
+--data-neutral:#879BA6;
+--data-up:var(--data-buy);
+--data-down:var(--data-sell);
+--data-high:#A1DBA0;
+--data-low:#F14376;
+
+/* ---- Status ---- */
+--status-success:var(--cbgm-green-600);
+--status-warning:#D9944A;
+--status-danger:#C9435A;
+--status-info:var(--cbgm-navy-500);
+}
