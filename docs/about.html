@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,17 +23,18 @@
 <style>
 body{margin:0;background:#fff;font-family:'Inter',system-ui,sans-serif;color:#3D3E44;-webkit-font-smoothing:antialiased}
 a{color:#1F3E6E;text-decoration:none}
-a:hover{color:#38B34B}
+a:hover{color:#27842F}
 </style>
 <script src="responsive.js"></script>
 </helmet>
 
 <div style="background:#fff">
 
-<div style="position:sticky;top:0;z-index:30;background:rgba(11,27,51,.96);border-bottom:1px solid rgba(255,255,255,.13)">
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;z-index:100;background:#0B1B33;color:#fff;font:400 14px/1 'Inter',sans-serif;padding:14px 20px;border-radius:0 0 4px 0;border-right:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)" style-focus="left:0">Skip to main content</a>
+<div role="banner" style="position:sticky;top:0;z-index:30;background:rgba(11,27,51,.96);border-bottom:1px solid rgba(255,255,255,.13)">
   <div style="max-width:1240px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:40px;height:88px">
     <a href="index.html" style="display:block"><img src="assets/logo-horizontal-white.png" alt="ClearBid Global Markets" style="height:54px;width:auto;display:block"></a>
-    <div data-om-navlinks="" style="margin-left:auto;display:flex;align-items:center;gap:30px;font:300 13px/1 'Inter',sans-serif">
+    <div data-om-navlinks="" role="navigation" aria-label="Main" style="margin-left:auto;display:flex;align-items:center;gap:30px;font:300 13px/1 'Inter',sans-serif">
       <a href="index.html" style="color:rgba(255,255,255,.82)" style-hover="color:#fff">Home</a>
       <a href="#" style="color:#fff;border-bottom:2px solid #38B34B;padding-bottom:5px">About</a>
       <a href="platform.html" style="color:rgba(255,255,255,.82)" style-hover="color:#fff">Platform</a>
@@ -41,10 +42,11 @@ a:hover{color:#38B34B}
       <a href="markets.html" style="color:rgba(255,255,255,.82)" style-hover="color:#fff">Markets</a>
       <a href="press.html" style="color:rgba(255,255,255,.82)" style-hover="color:#fff">Press</a>
       <a href="contact.html" style="color:rgba(255,255,255,.82)" style-hover="color:#fff">Contact</a>
-      <a href="#contact" style="background:#38B34B;color:#fff;padding:12px 20px;border-radius:4px;font:300 13px/1 'Inter',sans-serif;white-space:nowrap;flex:none" style-hover="background:#2E9A3F;color:#fff">Request an Introduction</a>
+      <a href="#contact" style="background:#27842F;color:#fff;padding:12px 20px;border-radius:4px;font:300 13px/1 'Inter',sans-serif;white-space:nowrap;flex:none" style-hover="background:#2E9A3F;color:#fff">Request an Introduction</a>
     </div>
   </div>
 </div>
+<main id="main-content" style="display:block">
 
 <section data-screen-label="About hero" style="background:#0B1B33;position:relative;overflow:hidden">
   <img src="assets/imagery/ribbon-wide.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.11">
@@ -77,14 +79,14 @@ a:hover{color:#38B34B}
 <section data-screen-label="Company and approach" style="max-width:1240px;margin:0 auto;padding:96px 40px 88px">
   <div style="display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:64px;align-items:start">
     <div>
-      <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8F99;margin:0 0 18px">Our company</p>
+      <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79;margin:0 0 18px">Our company</p>
       <h2 style="font:500 38px/1.16 'Montserrat',sans-serif;letter-spacing:-.025em;color:#1F3E6E;margin:0">Why CBGM exists</h2>
     </div>
     <div>
       <p style="font:300 20px/1.6 'Inter',sans-serif;color:#3D3E44;margin:0 0 34px;max-width:720px">Outdated approaches in global capital markets have led to funding gaps, reduced liquidity and greater market fragmentation, hindering efficient cross-border capital mobilization globally.</p>
       <div style="height:2px;width:64px;background:linear-gradient(90deg,#38B34B,#1F3E6E);margin:0 0 34px"></div>
-      <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8F99;margin:0 0 16px">Our approach</p>
-      <p style="font:300 16px/1.75 'Inter',sans-serif;color:#5E6169;margin:0 0 20px;max-width:720px">We are changing this by providing the tools that stakeholders need to raise and invest capital. CBGM is launching a digital marketplace: a multi-asset platform with transparent Dutch auction pricing that improves market liquidity, expands investment opportunities and modernizes cross-border connectivity between investors and issuers.</p>
+      <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79;margin:0 0 16px">Our approach</p>
+      <p style="font:300 16px/1.75 'Inter',sans-serif;color:#5E6169;margin:0 0 20px;max-width:720px">We are changing this by providing the tools that stakeholders need to borrow and invest capital. CBGM is launching a digital marketplace: a multi-asset platform with transparent Dutch auction pricing that improves market liquidity, expands investment opportunities and modernizes cross-border connectivity between investors and issuers.</p>
       <p style="font:300 16px/1.75 'Inter',sans-serif;color:#5E6169;margin:0;max-width:720px">CBGM is not a broker-dealer, investment adviser, arranger, or licensed market operator. It works through regulated local partners in each market.</p>
     </div>
   </div>
@@ -94,10 +96,10 @@ a:hover{color:#38B34B}
   <div style="max-width:1240px;margin:0 auto;padding:88px 40px">
     <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:44px">
       <div>
-        <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8F99;margin:0 0 18px">Our missions</p>
+        <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79;margin:0 0 18px">Our missions</p>
         <h2 style="font:500 38px/1.18 'Montserrat',sans-serif;letter-spacing:-.025em;color:#1F3E6E;margin:0;max-width:600px">Connecting the global markets on uniform digital rails</h2>
       </div>
-      <a href="solutions.html" style="font:300 13.5px/1 'Inter',sans-serif;color:#1F3E6E;border-bottom:1px solid #38B34B;padding-bottom:4px;white-space:nowrap" style-hover="color:#38B34B">See the solutions</a>
+      <a href="solutions.html" style="font:300 13.5px/1 'Inter',sans-serif;color:#1F3E6E;border-bottom:1px solid #38B34B;padding-bottom:4px;white-space:nowrap" style-hover="color:#27842F">See the solutions</a>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#DDE4EC;border:1px solid #DDE4EC;border-radius:12px;overflow:hidden">
       <div style="background:#fff;padding:30px 30px 34px">
@@ -108,7 +110,7 @@ a:hover{color:#38B34B}
       <div style="background:#fff;padding:30px 30px 34px">
         <img src="assets/icons/growth-chart.svg" alt="" style="width:36px;height:36px;display:block;margin-bottom:22px">
         <h3 style="font:500 17px/1.3 'Montserrat',sans-serif;color:#1F3E6E;margin:0 0 12px">Mobilizing Global Capital</h3>
-        <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">CBGM's unique combination of a digital marketplace and innovative financial instruments attracting new pools of global capital</p>
+        <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">CBGM combines a digital marketplace with capital markets expertise, designed to attract new and diverse pools of global capital.</p>
       </div>
       <div style="background:#fff;padding:30px 30px 34px">
         <img src="assets/icons/database.svg" alt="" style="width:36px;height:36px;display:block;margin-bottom:22px">
@@ -136,7 +138,7 @@ a:hover{color:#38B34B}
 
 <section data-screen-label="Leadership" id="leadership" style="max-width:1240px;margin:0 auto;padding:96px 40px 20px">
   <div style="margin-bottom:48px">
-    <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8F99;margin:0 0 18px">Leadership</p>
+    <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79;margin:0 0 18px">Leadership</p>
     <h2 style="font:500 40px/1.18 'Montserrat',sans-serif;letter-spacing:-.025em;color:#1F3E6E;margin:0 0 16px;max-width:620px">The team building the infrastructure</h2>
     <p style="font:300 16px/1.7 'Inter',sans-serif;color:#5E6169;margin:0;max-width:620px">Capital markets operators, exchange builders and fintech engineers, with careers spanning Citigroup, Societe Generale, the Nigerian Stock Exchange, Barclays and BNP Paribas.</p>
   </div>
@@ -146,7 +148,7 @@ a:hover{color:#38B34B}
       <img src="assets/team/robert-novembre-crop.png" alt="Robert Novembre" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Robert Novembre</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Founder and CEO</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Founder and CEO</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">30+ years in capital markets, as a CEO, Founder and Managing Director. Founded Fintech companies. Led $170 billion floating rate trading, syndicate, and sales at Citigroup as MD, covering asset-backed securities, corporate bonds, preferred stock, and infrastructure bonds. Patent Winner. Board Member.</p>
       </div>
     </div>
@@ -155,7 +157,7 @@ a:hover{color:#38B34B}
       <img src="assets/team/liz-hogan.png" alt="Liz Hogan" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Liz Hogan</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Chief Financial Officer</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Chief Financial Officer</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">Formerly Deputy Head of Global Markets at Societe Generale, she specializes in digital transformation, business strategy, and leadership in fixed income, currencies, and commodities.</p>
       </div>
     </div>
@@ -164,7 +166,7 @@ a:hover{color:#38B34B}
       <img src="assets/team/farooq-oreagba.png" alt="Farooq Oreagba" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Farooq Oreagba</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">President of ClearBid Africa</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">President of ClearBid Africa</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">Bringing 25+ years in capital markets, he held leadership roles at NG Clearing, African Alliance Investment Bank, FIMAT, the Nigerian Stock Exchange, and serves on the Nigerian Stock Exchange Derivatives Advisory Committee.</p>
       </div>
     </div>
@@ -173,7 +175,7 @@ a:hover{color:#38B34B}
       <img src="assets/team/jeff-schell.png" alt="Jeff Schell" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Jeff Schell</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Chief Technology Officer</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Chief Technology Officer</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">A seasoned fintech and capital markets leader with nearly 30 years of experience, he has directed product strategy and engineering teams across numerous enterprise platforms, simplifying market complexity with scalable, compliant digital solutions.</p>
       </div>
     </div>
@@ -182,7 +184,7 @@ a:hover{color:#38B34B}
       <img src="assets/team/shivana-singh-crop.png" alt="Shivana Singh" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Shivana Singh</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Head of Partnerships</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Head of Partnerships</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">Finance executive with 20 years of global experience in financial strategy, budgeting, and multinational reporting. She spent more than a decade at VMLY&amp;R managing complex financial operations across North America, EMEA, LATAM, and Asia. She combines deep financial expertise with a strong commitment to community leadership and social impact.</p>
       </div>
     </div>
@@ -191,20 +193,20 @@ a:hover{color:#38B34B}
       <img src="assets/team/joe-crowley.jpg" alt="Joe Crowley" style="width:92px;height:92px;border-radius:50%;object-fit:cover;object-position:50% 22%;display:block">
       <div>
         <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Joe Crowley</h3>
-        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Managing Director, Public Investment Banker</p>
+        <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Managing Director, Public Investment Banker</p>
         <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">A 30-year investment banking professional specializing in government bond issuance and public-sector finance. He has advised major U.S. governmental entities, including the State of California and the City and County of Los Angeles, on debt structuring and capital markets financing. He holds graduate degrees from the University of Washington and the University of Southern California and maintains FINRA Series 7, 52, 63, and 79 licenses.</p>
       </div>
     </div>
   </div>
 
   <div style="margin-top:44px">
-    <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8A8F99;margin:0 0 26px">Senior advisors, UK</p>
+    <p style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79;margin:0 0 26px">Senior advisors, UK</p>
     <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px">
       <div style="border:1px solid #DDE4EC;border-radius:12px;padding:30px 30px 32px;display:grid;grid-template-columns:92px minmax(0,1fr);gap:26px;align-items:start">
         <img src="assets/team/arjan-verbeek-crop.png" alt="Arjan Verbeek" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
         <div>
           <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Arjan Verbeek</h3>
-          <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Senior Advisor, UK CBGM</p>
+          <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Senior Advisor, UK CBGM</p>
           <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">Arjan is an investment banker with over 25 years' experience in structuring capital market transactions across all continents, gained at Moody's, Barclays and BNP Paribas. He has a particular expertise in housing and mortgage financing eco systems through arranging securitisation and covered bond platforms in new jurisdictions. Arjan founded and was the CEO of the first dual regulated covered bond bank in the UK, introducing long term fixed rate mortgages.</p>
         </div>
       </div>
@@ -212,7 +214,7 @@ a:hover{color:#38B34B}
         <img src="assets/team/farhaan-mir-crop.png" alt="Farhaan Mir" style="width:92px;height:92px;border-radius:50%;object-fit:cover;display:block">
         <div>
           <h3 style="font:500 20px/1.25 'Montserrat',sans-serif;letter-spacing:-.02em;color:#1F3E6E;margin:0 0 6px">Farhaan Mir</h3>
-          <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#38B34B;margin:0 0 16px">Senior Advisor, UK CBGM</p>
+          <p style="font:300 11px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#27842F;margin:0 0 16px">Senior Advisor, UK CBGM</p>
           <p style="font:300 14px/1.7 'Inter',sans-serif;color:#5E6169;margin:0">Farhaan has 35 years' experience in corporate finance leading businesses as a principal and advising clients across the U.S and Europe. He initially developed and exited a technology services business in JV with the U.S Army Corps of Engineers, a financial sector advisory business focused on financial innovation, and currently leads the first sequential UK issuer of ultra long dated indexed bonds.</p>
         </div>
       </div>
@@ -264,7 +266,7 @@ a:hover{color:#38B34B}
       <p style="font:300 16px/1.7 'Inter',sans-serif;color:rgba(255,255,255,.76);margin:0;max-width:520px">Get in touch and the team will point you to the right people.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:22px;align-items:flex-start;white-space:nowrap">
-      <a href="mailto:info@clearbidmarkets.com" style="background:#38B34B;color:#fff;font:400 15.5px/1 'Inter',sans-serif;padding:20px 34px;border-radius:4px;box-shadow:0 8px 26px rgba(56,179,75,.28);white-space:nowrap;flex:none" style-hover="background:#2E9A3F;color:#fff">Request an Introduction</a>
+      <a href="mailto:info@clearbidmarkets.com" style="background:#27842F;color:#fff;font:400 15.5px/1 'Inter',sans-serif;padding:20px 34px;border-radius:4px;box-shadow:0 8px 26px rgba(56,179,75,.28);white-space:nowrap;flex:none" style-hover="background:#2E9A3F;color:#fff">Request an Introduction</a>
       <div style="font:300 13.5px/1.8 'Inter',sans-serif;color:rgba(255,255,255,.68)">
         <div>info@clearbidmarkets.com</div>
         <div>New York, NY</div>
@@ -273,6 +275,7 @@ a:hover{color:#38B34B}
   </div>
 </section>
 
+</main>
 <footer style="background:#081527">
   <div style="max-width:1240px;margin:0 auto;padding:60px 40px 44px;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:40px">
     <div>
@@ -280,7 +283,7 @@ a:hover{color:#38B34B}
       <p style="font:300 13px/1.7 'Inter',sans-serif;color:rgba(255,255,255,.6);margin:0;max-width:320px">Digital debt issuance and trading infrastructure for institutional capital markets. Headquartered in New York, NY.</p>
     </div>
     <div>
-      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:18px">Company</div>
+      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px">Company</div>
       <div style="display:flex;flex-direction:column;gap:11px;font:300 13px/1 'Inter',sans-serif">
         <a href="platform.html" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">Platform</a>
         <a href="solutions.html" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">Solutions</a>
@@ -289,14 +292,14 @@ a:hover{color:#38B34B}
       </div>
     </div>
     <div>
-      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:18px">Resources</div>
+      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px">Resources</div>
       <div style="display:flex;flex-direction:column;gap:11px;font:300 13px/1 'Inter',sans-serif">
         <a href="press.html" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">Press</a>
         <a href="contact.html" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">Contact</a>
       </div>
     </div>
     <div>
-      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:18px">Enquiries</div>
+      <div style="font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px">Enquiries</div>
       <div style="display:flex;flex-direction:column;gap:11px;font:300 13px/1 'Inter',sans-serif">
         <a href="mailto:info@clearbidmarkets.com" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">info@clearbidmarkets.com</a>
         <a href="mailto:media@clearbidmarkets.com" style="color:rgba(255,255,255,.78)" style-hover="color:#7FD18C">media@clearbidmarkets.com</a>
@@ -304,7 +307,7 @@ a:hover{color:#38B34B}
     </div>
   </div>
   <div style="border-top:1px solid rgba(255,255,255,.12)">
-    <div style="max-width:1240px;margin:0 auto;padding:22px 40px;display:flex;justify-content:space-between;gap:24px;font:300 11.5px/1.6 'Inter',sans-serif;color:rgba(255,255,255,.45);flex-wrap:wrap">
+    <div style="max-width:1240px;margin:0 auto;padding:22px 40px;display:flex;justify-content:space-between;gap:24px;font:300 11.5px/1.6 'Inter',sans-serif;color:rgba(255,255,255,.55);flex-wrap:wrap">
       <span>© 2026 ClearBid Global Markets. All rights reserved.</span>
       <span style="max-width:640px;text-align:right">CBGM is not a broker-dealer, investment adviser, arranger, or licensed market operator. Services are provided through regulated local partners.</span>
     </div>
