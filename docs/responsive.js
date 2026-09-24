@@ -109,3 +109,83 @@
     start();
   }
 })();
+
+(function () {
+  var enc = encodeURIComponent;
+  var ov, lastFocus;
+  function close() { if (ov) { ov.remove(); ov = null; if (lastFocus) lastFocus.focus(); } }
+  function open(EMAIL, SUBJECT, TITLE) {
+    var q = SUBJECT ? '?subject=' + enc(SUBJECT) : '';
+    var opts = [
+      ['Open in App', 'mailto:' + EMAIL + q],
+      ['Open in Gmail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + enc(EMAIL) + (SUBJECT ? '&su=' + enc(SUBJECT) : '')],
+      ['Copy email address', null]
+    ];
+    lastFocus = document.activeElement;
+    ov = document.createElement('div');
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-labelledby', 'cbgm-intro-t');
+    ov.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(14,35,64,.5);display:flex;align-items:center;justify-content:center;padding:20px';
+    var box = document.createElement('div');
+    box.style.cssText = 'background:#fff;border-radius:12px;max-width:400px;width:100%;padding:30px 28px 24px;box-shadow:0 24px 60px rgba(14,35,64,.28);position:relative;font-family:Inter,sans-serif';
+    box.innerHTML = '<div style="height:3px;width:36px;background:linear-gradient(90deg,#38B34B,#1F3E6E);margin-bottom:18px"></div>' +
+      '<h2 id="cbgm-intro-t" style="font:500 21px/1.3 Montserrat,sans-serif;color:#1F3E6E;margin:0 0 8px;letter-spacing:-.02em"></h2>' +
+      '<p style="font:300 14px/1.6 Inter,sans-serif;color:#3D3E44;margin:0 0 20px;overflow-wrap:anywhere">Email us at <strong style="font-weight:500"></strong></p>';
+    box.querySelector('h2').textContent = TITLE;
+    box.querySelector('strong').textContent = EMAIL;
+    var list = document.createElement('div');
+    list.style.cssText = 'display:grid;gap:8px';
+    opts.forEach(function (o) {
+      var el = document.createElement(o[1] ? 'a' : 'button');
+      el.textContent = o[0];
+      el.style.cssText = 'display:block;width:100%;box-sizing:border-box;text-align:left;padding:14px 16px;border:1px solid #DDE4EC;border-radius:6px;background:#fff;font:400 14px/1.2 Inter,sans-serif;color:#1F3E6E;cursor:pointer;text-decoration:none';
+      el.onmouseenter = function () { el.style.borderColor = '#38B34B'; };
+      el.onmouseleave = function () { el.style.borderColor = '#DDE4EC'; };
+      if (o[1]) {
+        el.href = o[1];
+        el.setAttribute('data-cbgm-direct', '');
+        if (o[1].indexOf('http') === 0) { el.target = '_blank'; el.rel = 'noopener noreferrer'; el.referrerPolicy = 'no-referrer'; }
+        el.addEventListener('click', function () { setTimeout(close, 50); });
+      } else {
+        el.type = 'button';
+        el.addEventListener('click', function () {
+          var done = function () { el.textContent = 'Copied to clipboard'; el.style.color = '#27842F'; el.style.borderColor = '#38B34B'; };
+          var fallback = function () {
+            var ta = document.createElement('textarea');
+            ta.value = EMAIL; ta.setAttribute('readonly', '');
+            ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+            box.appendChild(ta); ta.focus(); ta.select(); ta.setSelectionRange(0, EMAIL.length);
+            var ok = false; try { ok = document.execCommand('copy'); } catch (err) {}
+            ta.remove();
+            if (ok) done(); else { el.textContent = EMAIL; el.style.userSelect = 'all'; }
+          };
+          if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(EMAIL).then(done, fallback);
+          else fallback();
+        });
+      }
+      list.appendChild(el);
+    });
+    box.appendChild(list);
+    var x = document.createElement('button');
+    x.type = 'button'; x.setAttribute('aria-label', 'Close'); x.innerHTML = '&times;';
+    x.style.cssText = 'position:absolute;top:12px;right:12px;width:36px;height:36px;border:0;background:none;font:300 26px/1 Inter,sans-serif;color:#6B6F79;cursor:pointer';
+    x.onclick = close;
+    box.appendChild(x);
+    ov.appendChild(box);
+    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
+    document.body.appendChild(ov);
+    list.firstChild.focus();
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"]');
+    if (!a || a.hasAttribute('data-cbgm-direct')) return;
+    var raw = a.getAttribute('href').slice(7), parts = raw.split('?');
+    var email = decodeURIComponent(parts[0]);
+    var subject = '';
+    if (parts[1]) { var m = parts[1].match(/(?:^|&)subject=([^&]*)/i); if (m) subject = decodeURIComponent(m[1].replace(/\+/g, ' ')); }
+    var intro = /Request an Introduction/i.test(a.textContent || '');
+    if (intro && !subject) subject = 'Request an Introduction';
+    e.preventDefault();
+    open(email, subject, intro ? 'Request an Introduction' : 'Get in touch');
+  }, true);
+})();
