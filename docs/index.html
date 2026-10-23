@@ -24,6 +24,8 @@
 body{margin:0;background:#fff;font-family:'Inter',system-ui,sans-serif;color:#3D3E44;-webkit-font-smoothing:antialiased}
 a{color:#1F3E6E;text-decoration:none}
 a:hover{color:#27842F}
+@keyframes cbgmPartnerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){[data-partner-track]{animation:none!important}}
 </style>
 <script src="responsive.js"></script>
 </helmet>
@@ -336,6 +338,13 @@ a:hover{color:#27842F}
         <a href="solutions.html#liquidity-providers" style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:24px 0;border-top:1px solid #DDE4EC;border-bottom:1px solid #DDE4EC" style-hover="color:#27842F"><span style="font:500 24px/1.2 'Montserrat',sans-serif;letter-spacing:-.02em;color:inherit">Liquidity providers</span><span style="font:300 13px/1 'Inter',sans-serif;color:#6B6F79;white-space:nowrap">For liquidity providers →</span></a>
       </div>
     </div>
+  </div>
+</section>
+
+<section data-screen-label="Partners" aria-label="Partners" style="padding:56px 0 60px;overflow:hidden">
+  <p style="max-width:1240px;margin:0 auto 36px;padding:0 40px;box-sizing:border-box;font:300 10.5px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#6B6F79">Partners</p>
+  <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+    <div data-partner-track="" style="display:flex;width:max-content;animation:cbgmPartnerScroll 40s linear infinite" style-hover="animation-play-state:paused"><div style="display:flex;align-items:center;gap:80px;padding-right:80px;flex:none"><img src="assets/partners/archax-trim.png" alt="Archax" style="width:60px;height:60px;display:block;flex:none"><img src="assets/partners/blaylock-van-trim.png" alt="Blaylock Van" style="width:119px;height:30px;display:block;flex:none"><img src="assets/partners/bullion-securities-trim.png" alt="Bullion Securities" style="width:59px;height:61px;display:block;flex:none"><img src="assets/partners/cardinalstone-trim.png" alt="CardinalStone" style="width:144px;height:37px;display:block;flex:none"><img src="assets/partners/genesis-trim.png" alt="Genesis" style="width:149px;height:24px;display:block;flex:none"><img src="assets/partners/aeo.png" alt="AEO" style="width:105px;height:34px;display:block;flex:none"><img src="assets/partners/hlps-logo.png" alt="HLPS" style="width:92px;height:39px;display:block;flex:none"><img src="assets/partners/hestia-trim.png" alt="Hestia" style="width:136px;height:26px;display:block;flex:none"><img src="assets/partners/dci-trim.png" alt="DCI Group" style="width:91px;height:39px;display:block;flex:none"></div><div aria-hidden="true" style="display:flex;align-items:center;gap:80px;padding-right:80px;flex:none"><img src="assets/partners/archax-trim.png" alt="" style="width:60px;height:60px;display:block;flex:none"><img src="assets/partners/blaylock-van-trim.png" alt="" style="width:119px;height:30px;display:block;flex:none"><img src="assets/partners/bullion-securities-trim.png" alt="" style="width:59px;height:61px;display:block;flex:none"><img src="assets/partners/cardinalstone-trim.png" alt="" style="width:144px;height:37px;display:block;flex:none"><img src="assets/partners/genesis-trim.png" alt="" style="width:149px;height:24px;display:block;flex:none"><img src="assets/partners/aeo.png" alt="" style="width:105px;height:34px;display:block;flex:none"><img src="assets/partners/hlps-logo.png" alt="" style="width:92px;height:39px;display:block;flex:none"><img src="assets/partners/hestia-trim.png" alt="" style="width:136px;height:26px;display:block;flex:none"><img src="assets/partners/dci-trim.png" alt="" style="width:91px;height:39px;display:block;flex:none"></div></div>
   </div>
 </section>
 
